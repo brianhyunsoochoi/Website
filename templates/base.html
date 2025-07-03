@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UTS Quant Media</title>
+<link rel="stylesheet" href="{{ url_for('static', path='styles.css') }}">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="header">
+    <div class="header-content">
+      <a href="{{ url_for('home') }}">
+        <img class="qm-logo" src="{{ url_for('static', path='qsoc-logo.png')}}" alt="Quant Media Logo">
+      </a>
+      <a class="title" href="{{ url_for('home') }}">
+        <h1>QUANT MEDIA</h1>
+      </a>
+      <div class="nav-buttons">
+        <a class="nav-link" href="{{ url_for('home') }}">
+          <button>HOME</button>
+        </a>
+        <a class="nav-link" href="https://www.instagram.com/utsquantsoc/">
+          <button class="insta-button">
+            UTS QUANT SOCIETY
+            <img src="{{ url_for('static', path='insta-logo.png') }}" alt="Instagram Logo" style="width: 15px; height: 15px;">
+          </button>
+        </a>
+        <button>ABOUT US</button>
+        <button>CONTACT US</button>
+      </div>
+    </div>
+  </div>
+  <hr style="position: relative; top: 80px;">
+  <content>
+    {{ content | safe }}
+  </content>
+</body>
+
+</html>

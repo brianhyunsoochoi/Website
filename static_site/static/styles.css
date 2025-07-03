@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  background: url('backgrounds/home-background.png') fixed;
+  background-size: cover;
+  color: white;
+  height: 100vh;
+  /* overflow: hidden; */
+}
+.header {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  height: 10%;
+  margin-left: 50px;
+}
+.header-content {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  align-items: center;
+  gap: 2rem;
+}
+.qm-logo {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  right: 60px;
+}
+.number {
+  font-size: 3rem;
+  font-weight: bold;
+  position: absolute;
+  top: -40px;
+  left: -40px;
+}
+.logo {
+  width: 30px;
+  height: 30px;
+  background: repeating-linear-gradient(45deg, #ccc, #ccc 1px, #000 1px, #000 2px);
+  margin-bottom: 20px;
+}
+.title {
+  position: relative;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 500; /* Adjust as needed: 400 = regular, 700 = bold */
+  letter-spacing: 0.05em; /* Optional: tweak for that spaced-out look */
+  text-wrap-mode: nowrap;
+  right: 100px;
+  color: white;
+  text-decoration: none;
+}
+.subtitle {
+  font-size: 0.8rem;
+  color: #ccc;
+  margin-bottom: 2rem;
+}
+.nav-buttons {
+  position: relative;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  height: 20px;
+  gap: 1rem;
+  grid-template-columns: repeat(1, 1fr);
+  right: 80px;
+  bottom: 10px;
+  text-wrap: nowrap;
+}
+button {
+  /* background: transparent; */
+  border: 1px solid #000000;
+  color: #000000;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+button:hover {
+  background: rgb(0, 63, 126);
+  color: black;
+}
+.handle {
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  color: #0ff;
+}
+content{
+  position: relative;
+  top: 200px;
+  left: 50px;
+  padding-bottom: 100px;
+}
+.nav-link {
+  text-decoration: none;
+}
+.insta-button {
+  display: flex;
+  gap: 5px;
+}

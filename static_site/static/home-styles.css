@@ -1,0 +1,174 @@
+body {
+  margin: 0;
+  font-family: 'Space Grotesk', sans-serif;
+  background: url('backgrounds/home-background.png');
+  background-size: cover;
+  color: white;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.main-div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  height: 100%;
+  margin-left: 7%;
+  margin-top: 3%;
+}
+
+.nav-menu {
+  position: relative;
+  max-width: 600px;
+  text-align: left;
+}
+
+.title-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.qm-logo {
+  height: 200px; 
+  width: 200px; 
+  position: relative; 
+  left: -50px;
+  top: 95px;
+}
+
+.number {
+  font-size: 3rem;
+  font-weight: bold;
+  position: absolute;
+  top: -40px;
+  left: -40px;
+}
+
+.logo {
+  width: 30px;
+  height: 30px;
+  background: repeating-linear-gradient(45deg, #ccc, #ccc 1px, #000 1px, #000 2px);
+  margin-bottom: 20px;
+}
+
+.title {
+  position: relative;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 500; /* Adjust as needed: 400 = regular, 700 = bold */
+  letter-spacing: 0.05em; /* Optional: tweak for that spaced-out look */
+}
+
+.subtitle {
+  font-size: 0.8rem;
+  color: #ccc;
+  margin-bottom: 2rem;
+}
+
+.buttons {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+button {
+  /* background: transparent; */
+  width: 185px;
+  border: 1px solid #000000;
+  color: #000000;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: rgb(0, 63, 126);
+  color: black;
+}
+
+.handle {
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  color: #0ff;
+}
+
+.blog-section {
+    width: 80%;
+    max-width: 400px; /* Max width for the entire blog section */
+    margin: 0 auto; /* Center the blog section */
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in element's total width and height */
+}
+
+.blog-post-card {
+    background-color: #112240; /* Slightly lighter dark blue for the card background */
+    border-radius: 8px; /* Slightly rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    overflow: hidden; /* Ensure image corners are rounded */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+}
+
+.blog-post-card:hover {
+    transform: translateY(-5px); /* Lift card slightly on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* More pronounced shadow on hover */
+}
+
+.blog-post-link {
+    text-decoration: none; /* Remove underline from the link */
+    color: inherit; /* Inherit text color from parent */
+    display: block; /* Make the entire card clickable */
+}
+
+.post-content-wrapper {
+    display: flex;
+    flex-direction: column; /* Stack image and title vertically */
+    align-items: center; /* Center items horizontally within the flex container */
+    padding: 25px; /* Padding inside the card around content */
+    text-align: center; /* Center the text */
+}
+
+.blog-cover-img {
+    width: 100%; /* Make image take full width of its container */
+    max-width: 400px; /* Limit max width of image for better aesthetics */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 4px; /* Slightly rounded corners for the image */
+    margin-bottom: 20px; /* Space between image and title */
+    object-fit: cover; /* Ensure image covers the area without distortion */
+    aspect-ratio: 16 / 9; /* Common aspect ratio for covers */
+}
+
+.post-title {
+    font-size: 1.4em; /* Larger, more prominent title */
+    font-weight: 700; /* Bold font for the title */
+    color: #ffffff; /* Your accent color, e.g., bright cyan/teal */
+    margin-top: 0;
+    margin-bottom: 10px; /* Space below title */
+    line-height: 1.3;
+}
+
+/* Optional: Add a summary style if you include it in HTML */
+/*
+.post-summary {
+    font-size: 1em;
+    color: #A8B2D1;
+    margin-bottom: 0;
+}
+*/
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .post-title {
+        font-size: 1.5em; /* Smaller title on smaller screens */
+    }
+    .post-content-wrapper {
+        padding: 15px; /* Less padding on smaller screens */
+    }
+    .blog-cover-img {
+        max-width: 100%; /* Allow image to take full width */
+    }
+}
